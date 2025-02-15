@@ -1,0 +1,119 @@
+        .navbar-custom {
+            background-color: #3e5916;
+        }
+        .navbar-custom .navbar-brand, 
+        .navbar-custom .nav-link {
+            color: white;
+        }
+        /* Hide search bar in navbar on small screens */
+        @media (max-width: 992px) {
+            .navbar-search {
+                display: none;
+            }
+            .navbar-collapse .search-container {
+                display: block !important;
+                margin-top: 10px;
+            }
+        }
+        .navbar-custom {
+    background-color: #3e5916;
+    padding: 10px 15px; /* Adjust padding for a suitable navbar height */
+}
+
+/* Ensure MBO logo height is suitable */
+.navbar-custom .navbar-brand {
+    color: white;
+    font-size: 35px; /* Adjust font size */
+    font-weight: bold;
+    line-height: 40px; /* Matches the navbar height */
+    height: 40px; /* Ensure it matches the navbar height */
+    display: flex;
+    align-items: center;
+}
+
+        /* Center carousel control buttons */
+        .carousel-control-prev, .carousel-control-next {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Set carousel image height */
+        .carousel-inner img {
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-inner {
+            height: 100%;
+            width: 100%;
+        }
+        /* Make carousel indicators round */
+        .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #bbb;
+            border: none;
+        }
+        .carousel-indicators .active {
+            background-color: #3e5916;
+        }
+
+        .card {
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(2,2,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .card-body {
+            font-size: 14px;
+        }
+    
+        .container-fluid {
+            background-color: #3e5916;
+            padding: 20px;
+        }
+ /* Optional: Set a fixed height for the carousel images */
+ .carousel-inner img {
+      height: 400px;
+      object-fit: cover;
+    }
+        
+    /* bottom navebar */
+    .navbar-custom {
+      background-color: #3e5916;
+      border-radius: 25px;
+    }
+    .nav-link {
+      font-size: 14px;
+    }
+    /* see more after cards css */
+     /* Custom card styling */
+     .carousel-item {
+        text-align: center;
+    }
+    .card-custom {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    .card-custom img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+      

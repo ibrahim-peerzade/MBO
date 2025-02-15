@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Search & Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MBO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Search bar for large screens -->
+            <div class="navbar-search d-lg-block d-none">
+                <div class="input-group search-container" style="max-width: 400px;">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="btn btn-outline-light"><i class="fas fa-camera"></i></button>
+                    <button class="btn btn-outline-light"><i class="fas fa-microphone"></i></button>
+                </div>
+            </div>
+    
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <!-- Search bar for small screens -->
+                <div class="search-container d-lg-none">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="btn btn-outline-light"><i class="fas fa-camera"></i></button>
+                        <button class="btn btn-outline-light"><i class="fas fa-microphone"></i></button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Emergency Helpline & User Options -->
+            <div class="d-flex">
+                <a class="nav-link text-white text-center mx-3" href="tel:112">
+                    <i class="bi bi-telephone-fill" style="font-size: 1.5rem;"></i><br>
+                    Emergency Helpline
+                </a>
+                <a class="nav-link text-white text-center" href="#">
+                    <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i><br>
+                    User
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- CAROUSEL -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="img/img.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/1.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/2.png" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+
+        <!-- Previous & Next Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+   <!-- Bootstrap Icons Cards -->
+<div class="container-fluid mt-4">
+    <div class="row justify-content-center g-4">
+        <!-- Card 1 -->
+        <div class="col-6 col-sm-6 col-md-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-hammer fs-1"></i>
+                    <p class="card-text">Carpenter</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-6 col-sm-6 col-md-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-wrench fs-1"></i>
+                    <p class="card-text">Plumber</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-6 col-sm-6 col-md-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-lightning fs-1"></i>
+                    <p class="card-text">Electrician</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-6 col-sm-6 col-md-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-palette fs-1"></i>
+                    <p class="card-text">Graphic Designer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-6 col-sm-6 col-md-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-globe fs-1"></i>
+                    <p class="card-text">E-Service</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-6 col-sm-6 col-md-2">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-heart-pulse fs-1"></i>
+                    <p class="card-text">Doctor</p>
+                </div>
+            </div>
+        </div>
+
+          <!-- Hidden Cards (Initially) -->
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-cup"></i>
+            <p class="card-text">Decourtores</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-scissors"></i>
+            <p class="card-text">Salones</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-brush"></i>
+            <p class="card-text">Mehendi Artist</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-house"></i>
+            <p class="card-text">Maids</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-book"></i>
+            <p class="card-text">Tuitions</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-bus-front"></i>
+            <p class="card-text">Educational Transport</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-heart"></i>
+            <p class="card-text">Pet Care</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-truck"></i>
+            <p class="card-text">JCB Crane</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-car-front"></i>
+            <p class="card-text">Car Bike Wash Service</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-basket"></i>
+            <p class="card-text">Vegetable and Fruits</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-scissors"></i>
+            <p class="card-text">Tailors</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 col-sm-4 col-md-2 hidden-cards">
+    <div class="card">
+        <div class="card-body text-center">
+            <i class="bi bi-washer"></i>
+            <p class="card-text">Laundries</p>
+        </div>
+    </div>
+</div>
+
+                
+                <!-- See More Button -->
+                <div class="row">
+                    <div class="col-12 text-end mt-3">
+                        <a id="seeMoreBtn" href="#" class="btn btn-light fw-bold rounded-pill">See More</a>
+                    </div>
+                </div>   
+                </div>
+            
+                </div>
+                </div>
+
+                <div id="autoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="card card-custom">
+                                <img src="img/opening.png" alt="Slide 1">
+                            </div>
+                        </div>
+            
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="card card-custom">
+                                <img src="img/come in opening.jpg" alt="Slide 2">
+                            </div>
+                        </div>
+            
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="card card-custom">
+                                <img src="img/opening.png" alt="Slide 3">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#autoCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#autoCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            
+                <!-- Bootstrap JavaScript -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        let myCarousel = new bootstrap.Carousel(document.getElementById("autoCarousel"), {
+                            interval: 2000, // Auto-slide every 2 seconds
+                            ride: "carousel",
+                            wrap: true // Ensures infinite looping
+                        });
+                    });
+                </script>
+                    <!-- Fixed Bottom Navbar -->
+                    <nav class="navbar fixed-bottom navbar-custom">
+                        <div class="container-fluid">
+                            <ul class="nav justify-content-around w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">
+                                        <i class="bi bi-briefcase-fill" style="font-size: 1.5rem;"></i><br>
+                                        Job Portal
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">
+                                        <i class="bi bi-fire" style="font-size: 1.5rem;"></i><br>
+                                        Hot Deals
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">
+                                        <i class="bi bi-house-door-fill" style="font-size: 1.5rem;"></i><br>
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">
+                                        <i class="bi bi-list-ul" style="font-size: 1.5rem;"></i><br>
+                                        Category
+                                    </a>
+                                </li>
+                               
+                                <li class="nav-item">
+                                    <a class="nav-link text-white text-center" href="#">
+                                        <i class="bi bi-bookmark-fill" style="font-size: 1.5rem;"></i><br>
+                                        Saved
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- !-- JavaScript for "See More" Functionality --> 
+<script>
+    document.getElementById("seeMoreBtn").addEventListener("click", function() {
+        let hiddenCards = document.querySelectorAll(".hidden-cards");
+        hiddenCards.forEach(card => {
+            card.style.display = "block";
+        });
+        this.style.display = "none"; // Hide "See More" button after clicking
+    });
+</script>
+
+    <script>
+        // Ensure infinite looping
+        var myCarousel = document.querySelector('#carouselExampleAutoplaying');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2000, // Set to 2 seconds
+            wrap: true // Ensures infinite looping
+        });
+    </script>
+</body>
+</html>
